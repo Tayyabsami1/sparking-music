@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/moving-border";
 const HeroSection = () => {
     return (
         <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col item-center justify-center 
-        relative overflow-hidden mx-auto py-10 md:py-0">
+        relative overflow-hidden mx-auto py-10 md:py-0 bg-slate-950">
             <div className=" p-4 relative z-10 w-full text-center">
                 <Spotlight
                     className="top-0 left-7 md:left-60 md:-top-20"
