@@ -1,5 +1,5 @@
 'use client'
-import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import couseData from "@/data/music_courses.json"
 
 interface Course {
