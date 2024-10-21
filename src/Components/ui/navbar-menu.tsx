@@ -13,6 +13,7 @@ const transition = {
   restSpeed: 0.001,
 };
 
+// MenuItem component with proper typing
 export const MenuItem = ({
   setActive,
   active,
@@ -25,7 +26,7 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -60,6 +61,7 @@ export const MenuItem = ({
   );
 };
 
+// Menu component with proper typing
 export const Menu = ({
   setActive,
   children,
@@ -70,13 +72,14 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black  bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative rounded-full border border-transparent dark:bg-black bg-white shadow-input flex justify-center space-x-4 px-8 py-6"
     >
       {children}
     </nav>
   );
 };
 
+// ProductItem component with proper typing
 export const ProductItem = ({
   title,
   description,
@@ -109,11 +112,20 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+// HoveredLink component with proper typing
+export const HoveredLink = ({
+  children,
+  href,
+  className,
+}: {
+  children: React.ReactNode;
+  href: string;
+  className?: string;
+}) => {
   return (
     <Link
-      {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      href={href}
+      className={`text-neutral-700 dark:text-neutral-200 hover:text-black ${className}`}
     >
       {children}
     </Link>
