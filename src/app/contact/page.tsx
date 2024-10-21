@@ -1,5 +1,4 @@
 'use client';
-
 import React, { FormEvent, useState } from 'react';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 
