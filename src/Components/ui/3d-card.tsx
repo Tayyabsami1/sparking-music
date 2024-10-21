@@ -55,7 +55,7 @@ export const CardContainer = ({
         style={{
           perspective: "1000px",
         }}
-      >
+      > 
         <div
           ref={containerRef}
           onMouseEnter={handleMouseEnter}
@@ -86,7 +86,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-36 w-96  [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
@@ -136,7 +136,7 @@ export const CardItem = ({
   return (
     <Tag
       ref={ref}
-      className={cn("w-fit transition duration-200 ease-linear", className)}
+      className={cn("w-fit transition duration-200 ease-linear border rounded-md px-2 py-4", className)}
       {...rest}
     >
       {children}
