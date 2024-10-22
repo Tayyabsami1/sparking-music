@@ -1,6 +1,6 @@
 'use client';
 import React, { FormEvent, useState } from 'react';
-import { BackgroundBeams } from '../../components/ui/background-beams';
+import { BackgroundBeams } from '../../Components/ui/background-beams';
 
 function MusicSchoolContactUs() {
   const [email, setEmail] = useState('');
