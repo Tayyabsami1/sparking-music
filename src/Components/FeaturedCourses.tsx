@@ -1,7 +1,7 @@
 'use client'
 import coursesData from '@/data/music_courses.json'
 import Link from 'next/link'
-import { Button } from "@/components/ui/moving-border";
+import { Button } from "./ui/moving-border";
 import { BackgroundGradient } from './ui/background-gradient';
 
 interface Course {
