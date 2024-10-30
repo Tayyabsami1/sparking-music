@@ -21,3 +21,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 ## Learnings 
 - Learning the Framework NextJS Itself
 - Using Aceternity UI
+- Focused on UI
+- Focused on Component Designing
+- Focused on Routing 
